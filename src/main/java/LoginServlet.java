@@ -24,7 +24,7 @@ public class LoginServlet extends HttpServlet {
         //get request parameters for userid and Password
         String user = request.getParameter("user");
         String pwd = request.getParameter("pwd");
-        //get servlet config init params
+        //get servlet configure init params
         String userId = getServletConfig().getInitParameter("user");
         String password = getServletConfig().getInitParameter("password");
         if (userId.equals(user) && password.equals(pwd)) {
